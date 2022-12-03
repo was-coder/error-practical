@@ -15,3 +15,37 @@ body {
   color: blue;
   text-decoration: none;
 }
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-container {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(2, 2, 2, 0.52),
+      rgba(2, 2, 2, 0.93)
+    ),
+    url("/public/assets/404.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.error-link {
+  color: #d0d5dd;
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.error-link:hover {
+  color: darkgoldenrod;
+  transition: all 1s ease-in-out;
+}
